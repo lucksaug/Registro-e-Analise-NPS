@@ -1,15 +1,12 @@
-import './Home.css'
-import Cadastro from './Componentes/Cadastro/Cadastro';
-
+import "./Home.css";
+import Cadastro from "./Componentes/Cadastro/Cadastro";
 
 function Home() {
-  return(
+  return (
     <div className="Home">
-      <Cadastro/>
+      <Cadastro />
     </div>
-
   );
-
-};
+}
 
 export default Home;
