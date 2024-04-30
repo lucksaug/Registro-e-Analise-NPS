@@ -1,0 +1,48 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.container{
+    width: 800px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10% auto;
+    margin: 10% auto;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(1, 5, 49, 0.5);
+    border-radius: 20px;
+}
+
+.container h1{
+    color: rgb(6, 27, 86);
+}
+
+.container .input-field{
+    width: 50%;
+    height: 50px;
+    margin: 30px auto;
+    padding: 10px;
+    font-family: Arial;
+    text-align: center;
+    align-items: center;
+    border-radius: 80px;
+    color: rgb(0, 68, 255)
+}
+
+.container .btn-enviar{
+    width: 50% auto;
+    height: 50px auto;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(0, 68, 255); 
+}
+
+.link{
+    padding: 10px;
+    margin: 30px;
+    color: rgb(0, 68, 255);
+}

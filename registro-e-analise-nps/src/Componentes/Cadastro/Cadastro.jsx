@@ -1,7 +1,11 @@
+//Bootstrap
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import React from "react";
-import "./Cadastro.css";
 import { useState } from "react";
 import Nota from "./Nota";
+import { Link } from "react-router-dom";
+import "../../Style/Cadastro.scss";
 
 const Cadastro = () => {
   const [cpf, setCpf] = useState("");
@@ -27,9 +31,13 @@ const Cadastro = () => {
         <div>
           <Nota />
         </div>
-        <button type="submit" className="btn-enviar">Enviar</button>
+        <button type="submit" className="btn-enviar">
+          Enviar
+        </button>
       </form>
-      <a href="#">Clique aqui para verificar as estátisticas</a>
+      <Link to="analise" className="link">
+        Clique aqui para verificar as estátisticas
+      </Link>
     </div>
   );
 };

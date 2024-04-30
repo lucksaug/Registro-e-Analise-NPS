@@ -1,40 +1,48 @@
+//Bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ToggleButton from 'react-bootstrap/ToggleButton';
+import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';
+import "../../Style/Nota.scss";
+
+//react
 import { React } from "react";
-import "./Nota.css";
-import { useState } from "react";
 
 const Nota = () => {
-  const propriedades = [
-    { id: "1", class: "btn-1", value: 1 },
-    { id: "2", class: "btn-2", value: 2 },
-    { id: "3", class: "btn-3", value: 3 },
-    { id: "4", class: "btn-4", value: 4 },
-    { id: "5", class: "btn-5", value: 5 },
-    { id: "6", class: "btn-6", value: 6 },
-    { id: "7", class: "btn-7", value: 7 },
-    { id: "8", class: "btn-8", value: 8 },
-    { id: "9", class: "btn-9", value: 9 },
-    { id: "10", class: "btn-10", value: 10 },
-  ];
-  const corString = "";
-  const [cor, setCor] = useState("");
-  const [pressionado, setPressionado] = useState(false);
-  const [nota, setNota] = useState("");
-
-  const isPressionado = (pressionado, {}) => {
-    if (pressionado) {
-      setPressionado(false);
-    } else {
-      setPressionado(true);
-    }
-    return alert("O botão foi" + pressionado.id + "foi pressionado");
-  };
-// lista com select
-  return propriedades.map(function (item) {
-    return (
-      <button className={item.class} onClick={isPressionado}>
-        {item.id}
-      </button>
-    );
-  });
+  return (
+    <div>
+      <ToggleButtonGroup type="radio" name="options" defaultValue={10}>
+        <ToggleButton id="tbg-radio-1" className="radio-button" value={1}>
+          1
+        </ToggleButton>
+        <ToggleButton id="tbg-radio-2" className="radio-button" value={2}>
+          2
+        </ToggleButton>
+        <ToggleButton id="tbg-radio-3" className="radio-button" value={3}>
+          3
+        </ToggleButton>
+        <ToggleButton id="tbg-radio-4" className="radio-button" value={4}>
+          4
+        </ToggleButton>
+        <ToggleButton id="tbg-radio-5" className="radio-button" value={5}>
+          5
+        </ToggleButton>
+        <ToggleButton id="tbg-radio-6" className="radio-button" value={6}>
+          6
+        </ToggleButton>
+        <ToggleButton id="tbg-radio-7" className="radio-button" value={7}>
+          7
+        </ToggleButton>
+        <ToggleButton id="tbg-radio-8" className="radio-button" value={8}>
+          8
+        </ToggleButton>
+        <ToggleButton id="tbg-radio-9" className="radio-button" value={9}>
+          9
+        </ToggleButton>
+        <ToggleButton id="tbg-radio-10" className="radio-button" value={10}>
+          10
+        </ToggleButton>
+      </ToggleButtonGroup>
+    </div>
+  );
 };
 export default Nota;

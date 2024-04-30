@@ -1,4 +1,3 @@
-import "./Home.css";
 import Cadastro from "./Componentes/Cadastro/Cadastro";
 
 function Home() {
